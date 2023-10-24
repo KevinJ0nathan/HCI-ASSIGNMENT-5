@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" /> <!-- Poppins Font -->
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="main">
+            <li class="active">
+                <a href="home.html">
+                    <i class="fa fa-home"></i>
+                    <span>Home Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="transfer.html">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>Transfer</span>
+                </a>
+            </li>
+            <li>
+                <a href="transactionhistory.html">
+                    <i class="fa-solid fa-money-check"></i>
+                    <span>Transaction History</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="#">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <div class="icons">
+            <a href="index.html" ><i class="fa-solid fa-house"></i></a>
+            <a href="transactionhistory.html"><i class="fa-solid fa-money-check"></i></a>
+            <a href="transfer.html" ><i class="fa-solid fa-money-bill-transfer"></i></a>
+            <a href="login.html" ><i class="fa-solid fa-right-from-bracket"></i></a>
+           </div>
+    </div>
+
+
+
+    <div class="maininfo">
+        <div class="db-header">
+            <div class="header-content">
+                <span>Home</span>
+                <h2>Dashboard</h2>
+            </div>
+            <p>Kevin Jonathan
+                <img class="pfp"src="https://media.discordapp.net/attachments/578899261509468160/1164813342129532959/Screenshot_20231020_133113_Gallery.jpg?ex=654493f5&is=65321ef5&hm=f04d69221c1e7830095a206cfe640e7a757cdadb262c21784f5a305d3642e7ec&=&width=723&height=999" alt="Profile Picture">
+            </p>
+        </div>
+   
+        
+        
+
+    <div class="card-container">
+        <h3 class="main-title">Debit Card</h3>
+        <div class="card-wrapper">
+            <div class="payment-card">
+                <div class="card-header">
+                    <div class="amount">
+                        <span class="title">
+                            Account Balance
+                        </span>
+                        <span class="amount-value">
+                            Rp 3.000.000
+                        </span>
+                    </div>
+                    <i class="fa-solid fa-rupiah-sign icon"></i>
+                </div>
+                <span class="card-detail">
+                    **** **** **** 7707
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="table-wrapper">
+        <div class="table-header">
+        <h3 class="main-title">Recent Transaction</h3>
+        <a href="transactionhistory.html">View All</a>
+    </div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Transaction Type</th>
+                        <th>Description</th>
+                        <th>Amount</th>
+                    </tr>
+
+                    <tbody>
+                        <tr>
+                            <td>
+                                2023-10-23
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                Food
+                            </td>
+                            <td>
+                                Rp 50 000
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                2023-10-23
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                MRT
+                            </td>
+                            <td>
+                                Rp 9 000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-22
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                Food
+                            </td>
+                            <td>
+                                Rp 54 000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-21
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                Food
+                            </td>
+                            <td>
+                                Rp 20 000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-21
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                Water
+                            </td>
+                            <td>
+                                Rp 5 000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-20
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                MRT
+                            </td>
+                            <td>
+                                Rp 10 000
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023-10-20
+                            </td>
+                            <td>
+                                Expenses
+                            </td>
+                            <td>
+                                Food
+                            </td>
+                            <td>
+                                Rp 40 000
+                            </td>
+                        </tr>
+                     
+                        
+                    </tbody>
+                </thead>
+            </table>
+        </div>
+    </div>
+ 
+    
+</body>
+</html>

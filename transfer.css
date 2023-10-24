@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    display: flex;
+    font-family: "Poppins" , sans-serif;
+    background-color: #e0ddde;
+    min-height: 100vh;
+}
+
+.navbar{
+    display: none;
+}
+
+
+.sidebar{
+    position: sticky;
+    width: 15%;;
+    padding: 0 1.7rem;
+    color: #fff;
+    overflow: hidden;
+    transition: all 0.5s linear;
+    background: rgba(113,99,186,225);
+}
+
+
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+
+.main{
+    height: 88%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.main li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-out;
+}
+
+.main li:hover, .active{
+    background: #b89dfd;
+}
+
+.main a{
+    color:#fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.main a span{
+    overflow:hidden;
+}
+
+.main a i{
+    font-size: 1.2rem;
+}
+
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*dashboard*/
+.maininfo {
+    flex: 1; 
+    padding: 20px; 
+}
+
+.db-header {
+    background: #fff;
+    color: #b89dfd;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    margin-right: 10px;
+}
+
+.header-content span {
+    font-size: 18px;
+}
+
+.header-content h2 {
+    font-size: 36px;
+}
+
+img {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 50%;
+    margin-left: 1vw;
+}
+
+p {
+    font-size: 16px;
+}
+
+.transfer-container form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+    color: #333;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+}
+
+button {
+    background: #b89dfd;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #937fc5;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    resize: none; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.currency-symbol {
+    font-size: 16px;
+    padding: 10px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+
+/*transaction history*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style table headers */
+th {
+    background: #b89dfd;
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Style table rows */
+tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+/* Style table data cells */
+td {
+    padding: 10px;
+}
+
+/* Style the total spend section */
+.total-spend {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Style the total spend text */
+.total-spend p {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+@media (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+
+    .navbar {
+        display:block;
+        background: rgba(113,99,186,225);
+        width: 100%;
+        height: 1vh;
+        min-height: 50px;
+        position:fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        overflow: hidden;
+    }
+
+    .icons{
+        box-sizing: border-box;
+        padding: 3%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .icons a{
+        height: 100%;
+        text-decoration: none;
+        color:white;
+    }
+
+    body {
+        font-size: 14px; 
+    }
+
+    .maininfo {
+        padding: 10px; 
+    }
+
+    .main a i {
+        font-size: 1rem;
+    }
+
+    
+}

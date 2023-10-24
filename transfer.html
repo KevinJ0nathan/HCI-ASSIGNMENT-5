@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="transfer.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo"></div>
+        <ul class="main">
+            <li>
+                <a href="index.html">
+                    <i class="fa fa-home"></i>
+                    <span>Home Dashboard</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="transfer.html">
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                    <span>Transfer</span>
+                </a>
+            </li>
+            <li>
+                <a href="transactionhistory.html">
+                    <i class="fa-solid fa-money-check"></i>
+                    <span>Transaction History</span>
+                </a>
+            </li>
+            <li class="logout">
+                <a href="login.html">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span>Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="navbar">
+        <div class="icons">
+            <a href="index.html" ><i class="fa-solid fa-house"></i></a>
+            <a href="transactionhistory.html"><i class="fa-solid fa-money-check"></i></a>
+            <a href="transfer.html" ><i class="fa-solid fa-money-bill-transfer"></i></a>
+            <a href="#" ><i class="fa-solid fa-right-from-bracket"></i></a>
+           </div>
+    </div>
+
+    
+    <div class="maininfo">
+        <div class="db-header">
+            <div class="header-content">
+                <h2>Transfer</h2>
+            </div>
+        </div>
+
+    <div class="transfer-container">
+        <form>
+            <div class="form-group">
+                <label for="fromAccount">From The Account:</label>
+                <select id="fromAccount" name="fromAccount">
+                    <option value="account1">8742351698</option>
+                    <!-- Add more account options as needed -->
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="toAccount">To Account:</label>
+                <select id="toAccount" name="toAccount">
+                    <option value="accountA">Account A</option>
+                    <option value="accountB">Account B</option>
+                    <!-- Add more account options as needed -->
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="amount">Amount of Money:</label>
+                <div class="input-group">
+                    <span class="currency-symbol">Rp</span>
+                    <input type="number" id="amount" name="amount" step="0.01" placeholder="Enter amount">
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter description"></textarea>
+            </div>
+    
+            <button type="submit">Transfer</button>
+        </form>
+    </div>
+
+</body>
+</html>
