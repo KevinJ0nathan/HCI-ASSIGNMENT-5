@@ -180,7 +180,7 @@ p {
     text-align: center;
     border-radius: 50%;
     font-size: 1.5rem;
-    background-color: blue;
+    background-color: rgba(113,99,186,225);
 }
 
 .card-detail{
